@@ -1,0 +1,50 @@
+/* ==========================================================================
+   ZYRA STORE - ANIMACIONES HOLOGRÁFICAS Y REVEALS DEL HUD (PREMIUM)
+   ========================================================================== */
+
+/* Revelación por Esquinas (Staggered Corner Reveals) */
+@keyframes cornerRevealTopLeft {
+    from { opacity: 0; transform: translate(-20px, -20px); }
+    to { opacity: 1; transform: translate(0, 0); }
+}
+
+@keyframes cornerRevealTopRight {
+    from { opacity: 0; transform: translate(20px, -20px); }
+    to { opacity: 1; transform: translate(0, 0); }
+}
+
+@keyframes cornerRevealBottomLeft {
+    from { opacity: 0; transform: translate(-20px, 20px); }
+    to { opacity: 1; transform: translate(0, 0); }
+}
+
+@keyframes cornerRevealBottomRight {
+    from { opacity: 0; transform: translate(20px, 20px); }
+    to { opacity: 1; transform: translate(0, 0); }
+}
+
+.top-left {
+    animation: cornerRevealTopLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.top-right {
+    animation: cornerRevealTopRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.bottom-left {
+    animation: cornerRevealBottomLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+.bottom-right {
+    animation: cornerRevealBottomRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+/* Pulsación de Anillos HUD */
+@keyframes pulseRings {
+    0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.15; }
+    100% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.45; }
+}
+
+.hud-ring {
+    animation: pulseRings 6s infinite alternate ease-in-out;
+}

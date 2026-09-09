@@ -1,0 +1,11 @@
+/* ==========================================================================
+   ZYRA STORE - CONTROL DE COMPONENTES ADICIONALES (PREMIUM)
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.bg-video-el.hidden {
+    display: none;
+}

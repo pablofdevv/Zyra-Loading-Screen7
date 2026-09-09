@@ -1,0 +1,31 @@
+/* ==========================================================================
+   ZYRA STORE - VARIABLES CSS Y COLORES DEL HUD HOLOGRÁFICO (PREMIUM)
+   ========================================================================== */
+
+:root {
+    /* Colores del Holograma y HUD */
+    --bg-pure-black: #030303;
+    --bg-hud-card: rgba(6, 6, 6, 0.55);
+    
+    /* Bordes Translúcidos del HUD */
+    --border-hud: 1px solid rgba(255, 255, 255, 0.02);
+    --border-hud-active: 1px solid rgba(223, 186, 95, 0.35);
+    
+    /* Color de Acento de Lujo (Oro Bronce / Gold) */
+    --accent-pure-white: #dfba5f;
+    --accent-glow: rgba(223, 186, 95, 0.2);
+    
+    /* Colores del texto */
+    --text-primary: #f8f8f8;
+    --text-secondary: #a1a1aa;
+    --text-muted: #4e4e52;
+    
+    /* Tipografías Futura Bold Italic Style */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-size-base: 16px;
+    
+    /* Transiciones */
+    --transition-smooth: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    --blur-intensity: 14px;
+}

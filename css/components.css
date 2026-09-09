@@ -1,0 +1,245 @@
+/* ==========================================================================
+   ZYRA STORE - DETALLES DEL HUD Y COMPONENTES ESQUINEROS (PREMIUM)
+   ========================================================================== */
+
+/* --- ESQUINA TOP-LEFT: BRANDING --- */
+.brand-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-wrapper h1 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-style: italic; /* Estilo Futura Bold Italic */
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.logo-wrapper img {
+    max-height: 38px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(223, 186, 95, 0.2));
+}
+
+.server-title-text {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 900;
+    font-style: italic; /* Estilo Futura Bold Italic */
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.0;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 3px;
+}
+
+.status-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent-pure-white);
+    box-shadow: 0 0 5px var(--accent-pure-white);
+    animation: pulseDot 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulseDot {
+    from { opacity: 0.35; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1.3); }
+}
+
+.status-label {
+    font-size: 0.55rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+}
+
+/* --- ESQUINA TOP-RIGHT: ENLACES --- */
+.hud-links-list {
+    display: flex;
+    gap: 8px;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.005);
+    border: var(--border-hud);
+    border-radius: 20px;
+    padding: 6px 14px;
+    color: var(--text-secondary) !important;
+    font-size: 0.62rem;
+    font-weight: 900;
+    font-style: italic; /* Estilo Futura Bold Italic */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: var(--transition-smooth);
+}
+
+.social-btn svg {
+    display: none !important;
+}
+
+.social-btn:hover {
+    color: var(--accent-pure-white) !important;
+    border-color: var(--accent-pure-white);
+    background: rgba(223, 186, 95, 0.015);
+}
+
+/* --- ESQUINA BOTTOM-LEFT: REPRODUCTOR INLINE --- */
+.hud-player-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.player-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.music-indicator {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent-pure-white);
+    box-shadow: 0 0 5px var(--accent-pure-white);
+    opacity: 0.35;
+}
+
+.track-scroller {
+    max-width: 140px;
+    overflow: hidden;
+}
+
+.track-label {
+    font-family: var(--font-heading);
+    font-size: 0.62rem;
+    font-weight: 900;
+    font-style: italic; /* Estilo Futura Bold Italic */
+    color: var(--text-primary);
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: var(--border-hud);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-smooth);
+}
+
+.control-btn:hover {
+    color: var(--accent-pure-white);
+    border-color: var(--accent-pure-white);
+    background: rgba(223, 186, 95, 0.015);
+}
+
+.volume-slider-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.vol-btn {
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.vol-btn:hover {
+    color: var(--accent-pure-white);
+}
+
+.vol-svg {
+    width: 10px;
+    height: 10px;
+}
+
+.vol-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 45px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.06);
+    outline: none;
+    cursor: pointer;
+}
+
+.vol-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent-pure-white);
+}
+
+/* --- ESQUINA BOTTOM-RIGHT: LOG Y PORCENTAJE --- */
+.hud-progress-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-percent-box {
+    display: flex;
+}
+
+.progress-pct {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-style: italic; /* Estilo Futura Bold Italic */
+    color: var(--text-primary);
+    letter-spacing: -1px;
+    line-height: 1.0;
+}
+
+.progress-log-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.log-prefix {
+    font-family: var(--font-heading);
+    font-size: 0.55rem;
+    font-weight: 900;
+    font-style: italic; /* Estilo Futura Bold Italic */
+    color: var(--accent-pure-white);
+    letter-spacing: 0.5px;
+}
+
+.log-text-el {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
